@@ -1,1 +1,0 @@
-This is a very cool website for Lucy Greaves, a.k.a. Plumber Greaves.
