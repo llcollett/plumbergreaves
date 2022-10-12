@@ -305,7 +305,14 @@ header:hover .water {
 }
 @media only screen and (max-width: 950px), only screen and (max-height: 830px) {
     header {height: 9.5rem;}
-    header .container #test-square {top: 1rem;}
+    .tap {height: 3.5rem; width: 3.5rem;}
+    .water {
+        animation: water1 400ms ease-out infinite;
+    }
+    @keyframes water1 {
+        50% {transform: translate(0, 1rem);}
+        100% {transform: translate(0, 3.5rem);}
+    }
     header .container h1 {font-size: 3rem; top: 4rem;}
     .content {top: 11rem;}
     .content div {width: 25rem; height: auto;}
@@ -316,9 +323,17 @@ header:hover .water {
 }
 
 @media only screen and (max-width: 710px), only screen and (max-height: 674px) {
-    header {height: 8rem;}
+    header {height: 8.5rem;}
+    .tap {height: 3rem; width: 3rem;}
+    .water {
+        animation: water1 400ms ease-out infinite;
+    }
+    @keyframes water1 {
+        50% {transform: translate(0, 1rem);}
+        100% {transform: translate(0, 2.9rem);}
+    }
     header .container h1 {font-size: 2rem;}
-    .content {top: 9.5rem;}
+    .content {top: 9.8rem;}
     .content div {font-size: 1.2rem;}
 }
 @media only screen and (max-width: 480px) {
