@@ -218,6 +218,7 @@ header:hover .water {
     top: 17.5rem;
     left: 0; right: 0;
     margin: 0 auto;
+    margin-top: 1rem;
     padding-bottom: 5rem;
     display: flex;
     justify-content: space-around;
@@ -314,7 +315,7 @@ header:hover .water {
         100% {transform: translate(0, 3.5rem);}
     }
     header .container h1 {font-size: 3rem; top: 4rem;}
-    .content {top: 11rem;}
+    .content {top: 11.5rem;}
     .content div {width: 25rem; height: auto;}
 }
 
@@ -344,7 +345,7 @@ header:hover .water {
 }
 @media only screen and (max-width: 399px) {
     header {height: 7rem;}
-    header .container h1 {font-size: 1.2rem;}
+    header .container h1 {font-size: 5vw;}
     .content {top: 9rem;}
     .content div {font-size: 0.75rem;}
 }
@@ -366,10 +367,8 @@ header:hover .water {
     }
     .contact h2 {font-size: 4.75vw;}
 }
-@media only screen and (max-height: 740px) and (min-width: 760px) {
-    .contact {height: 5rem;}
-}
 
-@media only screen and (max-width: 450px) {
-    .contact {height: 4rem;}
+/*mobile site*/
+@media (max-width: 414px) {
+
 }
