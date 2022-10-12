@@ -70,7 +70,6 @@ header .container h1 {
     left: 0; right: 0;
     margin: 0 auto;
     padding-bottom: 5rem;
-    background-color: hsla(240, 3%, 94%, 80%);;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -78,11 +77,11 @@ header .container h1 {
 }
 .content div {
     position: relative;
-    height: 20rem;
     width: 18rem;
+    /*height: 20rem;*/
+    height: auto;
     padding: 1.25%;
     margin: 1%;
-    margin-bottom: 5rem;
     font-size: 1.5rem;
     font-weight: bold;
     color: black;
@@ -94,6 +93,9 @@ header .container h1 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+.content div:last-child {
+    margin-bottom: 5rem;
 }
 .content div img {
     width: 10rem;
@@ -134,6 +136,7 @@ header .container h1 {
 .contact img {
     max-width: 2rem;
     padding-right: 2%;
+    color: black;
 }
 .contact h2 {
     font-size: 3rem;
@@ -150,21 +153,24 @@ header .container h1 {
 /*adjust for smaller screen sizes*/
 /*header and content*/
 @media only screen and (max-width: 1160px) {
-    .content div {font-size: 1.4rem;}
+    .content div {
+        font-size: 1.4rem;
+        margin-bottom: 5%;
+    }
 }
 @media only screen and (max-width: 950px), only screen and (max-height: 830px) {
     header {height: 9.5rem;}
     header .container #test-square {top: 1rem;}
     header .container h1 {font-size: 3rem; top: 4rem;}
     .content {top: 11rem;}
-    .content div {height: 18rem; width: 20rem;}
+    .content div {width: 25rem; height: auto;}
 }
 
 @media only screen and (max-width: 740px) {
-    .content div {height: auto; width: 28rem;}
+    .content div {width: 28rem; height: auto;}
 }
 
-@media only screen and (max-width: 710px), only screen and (max-width: 674px) {
+@media only screen and (max-width: 710px), only screen and (max-height: 674px) {
     header {height: 8rem;}
     header .container h1 {font-size: 2rem;}
     .content {top: 9.5rem;}
@@ -200,6 +206,10 @@ header .container h1 {
     }
     .contact h2 {font-size: 4.75vw;}
 }
-@media only screen and (max-height: 740px) {
-    .contact {height: 6rem;}
+@media only screen and (max-height: 740px) and (min-width: 760px) {
+    .contact {height: 5rem;}
+}
+
+@media only screen and (max-width: 450px) {
+    .contact {height: 4rem;}
 }
