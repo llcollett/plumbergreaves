@@ -340,13 +340,13 @@ header:hover .water {
 @media only screen and (max-width: 480px) {
     header {height: 8rem;}
     header .container h1 {font-size: 1.6rem;}
-    .content {top: 10rem;}
+    .content {top: 10rem; margin: 2rem;}
     .content div {font-size: 1rem;}
 }
 @media only screen and (max-width: 399px) {
     header {height: 7rem;}
     header .container h1 {font-size: 5vw;}
-    .content {top: 9rem;}
+    .content {top: 9rem; margin: 2rem;}
     .content div {font-size: 0.75rem;}
 }
 
@@ -366,11 +366,4 @@ header:hover .water {
         line-height: 0.0125rem;
     }
     .contact h2 {font-size: 4.75vw;}
-}
-
-/*mobile site*/
-@media only screen and (max-width: 414px) {
-    .content {
-        display: inline-block;
-    }
 }
