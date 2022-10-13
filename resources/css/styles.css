@@ -23,6 +23,7 @@ header {
     margin: 0 auto;
     background-color: white;
     border-bottom: 2rem solid hsla(275, 57.3%, 67.8%, 60%);
+    box-shadow: 0.125rem 0.125rem 1rem black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -35,6 +36,7 @@ header {
     width: 5rem;
     height: 5rem;
     background-color: hsla(240, 3%, 94%, 80%);
+    box-shadow: 0.125rem 0.125rem 1rem black;
     border-radius: 20%;
 }
 /*universal styles for all*/
@@ -228,7 +230,6 @@ header:hover .water {
 .content div {
     position: relative;
     width: 18rem;
-    /*height: 20rem;*/
     height: auto;
     padding: 1.25%;
     margin: 1%;
@@ -238,7 +239,7 @@ header:hover .water {
     background-color: hsla(240, 3%, 94%, 80%);
     border: 1px solid black;
     border-radius: 1rem;
-    box-shadow:	0 0.125rem 0.5rem hsla(0, 0, 0, 30%), 0 0.0625rem 0.125rem hsla(0, 0, 0, 20%);
+    box-shadow: 0.125rem 0.125rem 1rem black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -273,6 +274,7 @@ header:hover .water {
     bottom: 0; left: 0; right: 0;
     padding: 0.25rem;
     background-color: hsla(95, 57.3%, 32.2%, 80%);
+    box-shadow: -0.125rem -0.125rem 1rem black;
     display: inline-flex;
     justify-content: space-evenly;
     align-items: center;
