@@ -36,9 +36,4 @@ $(document).ready(function(){
         $('.content .why').css({'box-shadow': '0.125rem 0.125rem 1rem black', 'border': '1px solid black'});
     });
 
-
-    $('.header nav .who').click(function() {
-        $('.content .who').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-    });
-
 })
