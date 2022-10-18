@@ -178,7 +178,7 @@ nav ul li:hover {
         70% {background-position: 50px -20px;}
         100% {background-position: -10px -30px;}
     }
-    nav ul li {font-size: 2.5rem;}git st
+    nav ul li {font-size: 2.5rem;}
     .content {
         margin-top: 15rem;
         margin-bottom: 10rem;
@@ -223,7 +223,7 @@ nav ul li:hover {
     .header h1 {font-size: 2rem;}
     .header h1 span {
         -webkit-animation-name: waterLevel3;
-        -webkit-animation-duration: 3s;
+        -webkit-animation-duration: 4s;
     }
     @-webkit-keyframes waterLevel3 { 
         0% {background-position: 220px -35px}
@@ -245,7 +245,7 @@ nav ul li:hover {
     .header h1 {font-size: 1.5rem;}
     .header h1 span {
         -webkit-animation-name: waterLevel4;
-        -webkit-animation-duration: 3s;
+        -webkit-animation-duration: 4s;
     }
     @-webkit-keyframes waterLevel4 { 
         0% {background-position: 220px -45px;}
@@ -269,11 +269,11 @@ nav ul li:hover {
     .header h1 {font-size: 1.25rem;}
     .header h1 span {
         -webkit-animation-name: waterLevel5;
-        -webkit-animation-duration: 3s;
+        -webkit-animation-duration: 4s;
     }
     @-webkit-keyframes waterLevel5 { 
-        0% {background-position: 220px -50px;}
-        70% {background-position: 50px -57.5px;}
+        0% {background-position: 120px -55px;}
+        70% {background-position: 50px -60px;}
         100% {background-position: -10px -65px;}
     }
     .contact h2, .contact a {font-size: 1.25rem;}
@@ -335,7 +335,7 @@ nav ul li:hover {
     .header h1 {font-size: 2rem;}
     .header h1 span {
         -webkit-animation-name: waterLevel3;
-        -webkit-animation-duration: 3s;
+        -webkit-animation-duration: 4s;
     }
     @-webkit-keyframes waterLevel3 { 
         0% {background-position: 220px -35px}
@@ -369,7 +369,7 @@ nav ul li:hover {
     .header h1 {font-size: 1.5rem;}
     .header h1 span {
         -webkit-animation-name: waterLevel4;
-        -webkit-animation-duration: 3s;
+        -webkit-animation-duration: 4s;
     }
     @-webkit-keyframes waterLevel4 { 
         0% {background-position: 120px -45px;}
@@ -393,11 +393,11 @@ nav ul li:hover {
     .header h1 {font-size: 1.25rem;}
     .header h1 span {
         -webkit-animation-name: waterLevel5;
-        -webkit-animation-duration: 3s;
+        -webkit-animation-duration: 4s;
     }
     @-webkit-keyframes waterLevel5 { 
-        0% {background-position: 120px -50px;}
-        70% {background-position: 50px -57.5px;}
+        0% {background-position: 120px -55px;}
+        70% {background-position: 50px -60px;}
         100% {background-position: -10px -65px;}
     }
     .contact h2, .contact a {font-size: 1.25rem;}
