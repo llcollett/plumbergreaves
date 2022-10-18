@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
     <head>
         <title>Plumber Greaves</title>
-        <!--viewport line-->
+        <!--meta tags-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="Bristol-based plumber working on repairs, maintainance and installations. No job too small.">
+        <meta property="og:title" content="Plumber Greaves" />
+        <meta property="og:site_name" content="Plumber Greaves" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://plumbergreaves.co.uk/" />
+        <meta property="og:image" content="./resources/images/lucy.jpg" />
+        <meta property="og:description" content="Bristol-based plumber working on repairs, maintainance and installations. No job too small.">
+        <!--other link tags-->
+        <link rel="canonical" href="https://plumbergreaves.co.uk/" />
+        <link rel="alternate" hreflang="en" href="https://example.com" />
         <!-- link css styles-->
         <link href="./resources/css/styles.css" type="text/css" rel="stylesheet">
         <!-- include logo-->
@@ -16,61 +27,74 @@
 
     <body>
         <header>
-            <div class="container">
-                <div class="tap">
-                    <div class="prehistoric">
-                        <div class="orig">
-                            <div class="first">
-                                <div class="second">
-                                    <div class="third"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="water">
-                    </div>
+            <div class="header">
+                <div class="header-logo">LOGO</div>
+                <div class="header-text">
+                    <h1>Hello, I am Plumber Greaves.</h1>
                 </div>
-            </div>
-            <div class="container">
-                <h1>Hello, I am Plumber Greaves.</h1>
+                <nav class="header-nav">
+                    <ul>
+                        <li class="who">Who?</li>
+                        <li class="what">What?</li>
+                        <li class="how">How?</li>
+                        <li class="when">When?</li>
+                        <li class="where">Where?</li>
+                        <li class="why">Why?</li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
         <main>
             <section class="content">
-                <div class="who">
+                <div class="who" id="who">
                     <h2>Who?</h2>
                     <img src="./resources/images/lucy.jpg" alt="Photo of Lucy Greaves" />
                     <p>I am Lucy Greaves. I live as a queer, non-binary human. Plumbing by Cargo Bike.</p>
                 </div>
-                <div class="what">
+                <div class="what" id="what">
                     <h2>What?</h2>
                     <p>Specialist in repairs, from toilets to kitchen taps, radiators to stopcocks. Beautiful looking pipework, not at the expense of function.</p>
                 </div>
-                <div class="when">
+                <div class="how" id="how">
+                    <h2>How?</h2>
+                    <img src="." alt="Photo of Plumber Greaves fixing a tap" />
+                    <img src="." alt="Photo of Plumber Greaves installing a radiator" />
+                    <p>A skilled and experienced plumber with integrity and honesty.</p>
+                </div>
+                <div class="when" id="when">
                     <h2>When?</h2>
                     <p>Call, text or email, using contact details below.</p>
                 </div>
-                <div class="where">
+                <div class="where" id="where">
                     <h2>Where?</h2>
                     <p>Within a 5 mile radius of Easton, Bristol.</p>
                 </div>
-                <div class="how">
-                    <h2>How?</h2>
+                <div class="why" id="why">
+                    <h2>Why?</h2>
+                    <p>Why choose Plumber Greaves?</p>
                     <p>"Lucy is magnificent" - most people</p>
                     <p>"An absolute pleasure to have in my home" - nice lady</p>
                 </div>
             </section>
         </main>
 
-        <footer class="contact">
-            <div class="contact-box">
-                <h2><a href="tel:+447563726655">&#9743; 07563 72 66 55</a></h2>
-            </div>
-            <div class="contact-box">
-                <a href="mailto:hello@plumbergreaves.co.uk"><h2>&#9993; hello@plumbergreaves.co.uk</h2></a>
+        <footer>
+            <div class="contact">
+                <div class="contact-box">
+                    <h2 class="phone"><a href="tel:+447563726655">&#9743; 07563 72 66 55</a></h2>
+                </div>
+                <div class="contact-box">
+                    <h2 class="mail"><a href="mailto:hello@plumbergreaves.co.uk">&#9993; hello@plumbergreaves.co.uk</a></h2>
+                </div>
             </div>
         </footer>
     </body>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+    <script src="./resources/js/interface.js"></script>
     
 </html>
