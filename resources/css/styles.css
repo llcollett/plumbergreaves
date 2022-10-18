@@ -54,15 +54,9 @@ a {
     -webkit-animation-timing-function: linear;
 }
 @-webkit-keyframes waterLevel { 
-    0% {
-        background-position: 220px 20px;
-    }
-    70% {
-        background-position: 50px -20px;
-    }
-    100% {
-        background-position: -10px -25px;
-    }
+    0% {background-position: 220px 20px;}
+    70% {background-position: 50px -20px;}
+    100% {background-position: -10px -25px;}
 }
 /*remove both animations when hover over header*/
 header:hover .header-text h1 {
@@ -175,7 +169,15 @@ nav ul li:hover {
     .content div {width: 28rem; height: auto;}
 }
 @media only screen and (max-width: 1140px) and (min-height: 860px) {
-    .header h1 {font-size: 4rem;}
+    .header h1 {
+        font-size: 4rem;
+        -webkit-animation-name: waterLevel1;
+    }
+    @-webkit-keyframes waterLevel1 { 
+        0% {background-position: 220px 20px;}
+        70% {background-position: 50px -20px;}
+        100% {background-position: -10px -30px;}
+    }
     nav ul li {font-size: 2.5rem;}
     .content {
         margin-top: 15rem;
@@ -195,7 +197,15 @@ nav ul li:hover {
     .contact h2, .contact a {font-size: 2.75rem;}
 }
 @media only screen and (max-width: 912px) and (min-height: 860px) {
-    .header h1 {font-size: 3rem;}
+    .header h1 {
+        font-size: 3rem;
+        -webkit-animation-name: waterLevel2;
+    }
+    @-webkit-keyframes waterLevel2 { 
+        0% {background-position: 220px -20px}
+        70% {background-position: 50px -30px;}
+        100% {background-position: -10px -40px;}
+    }
     nav ul li {font-size: 2rem;}
     .content {margin-top: 13rem;}
     .content div {
@@ -212,7 +222,15 @@ nav ul li:hover {
     .contact h2, .contact a {font-size: 2.5rem;}
 }
 @media only screen and (max-width: 680px) and (min-height: 860px) {
-    .header h1 {font-size: 2rem;}
+    .header h1 {
+        font-size: 2rem;
+        -webkit-animation-name: waterLevel3;
+    }
+    @-webkit-keyframes waterLevel3 { 
+        0% {background-position: 220px -35px}
+        70% {background-position: 50px -50px;}
+        100% {background-position: -10px -70px;}
+    }
     nav ul li {font-size: 1.5rem;}
     .content {
         margin-top: 11rem;
@@ -225,7 +243,15 @@ nav ul li:hover {
     .contact h2, .contact a {font-size: 1.75rem;}
 }
 @media only screen and (max-width: 476px) and (min-height: 860px) {
-    .header h1 {font-size: 1.5rem;}
+    .header h1 {
+        font-size: 1.5rem;
+        -webkit-animation-name: waterLevel4;
+    }
+    @-webkit-keyframes waterLevel4 { 
+        0% {background-position: 220px -45px;}
+        70% {background-position: 50px -50px;}
+        100% {background-position: -10px -70px;}
+    }
     nav ul li {font-size: 1rem;}
     .content {
         margin-top: 9rem;
@@ -240,7 +266,15 @@ nav ul li:hover {
 }
 /*mobile*/
 @media only screen and (max-width: 380px) and (min-height: 860px) {
-    .header h1 {font-size: 1.25rem;}
+    .header h1 {
+        font-size: 1.25rem;
+        -webkit-animation-name: waterLevel5;
+    }
+    @-webkit-keyframes waterLevel5 { 
+        0% {background-position: 220px -50px;}
+        70% {background-position: 50px -57.5px;}
+        100% {background-position: -10px -65px;}
+    }
     .contact h2, .contact a {font-size: 1.25rem;}
 }
 @media only screen and (max-width: 330px) and (min-height: 860px) {
@@ -253,7 +287,15 @@ nav ul li:hover {
 
 /*when screen is short*/
 @media only screen and (max-height: 859px) {
-    .header h1 {font-size: 4rem;}
+    .header h1 {
+        font-size: 4rem;
+        -webkit-animation-name: waterLevel1;
+    }
+    @-webkit-keyframes waterLevel1 { 
+        0% {background-position: 220px 20px;}
+        70% {background-position: 50px -20px;}
+        100% {background-position: -10px -30px;}
+    }
     nav ul li {font-size: 2rem;}
     .content {margin-top: 13rem;}
     .content div {
@@ -277,7 +319,15 @@ nav ul li:hover {
     }
 }
 @media only screen and (max-height: 859px) and (max-width: 912px) {
-    .header h1 {font-size: 3rem;}
+    .header h1 {
+        font-size: 3rem;
+        -webkit-animation-name: waterLevel2;
+    }
+    @-webkit-keyframes waterLevel2 { 
+        0% {background-position: 220px -20px}
+        70% {background-position: 50px -30px;}
+        100% {background-position: -10px -40px;}
+    }
     nav ul li {font-size: 2rem;}
     .content {margin-top: 13rem;}
 }
@@ -285,7 +335,15 @@ nav ul li:hover {
     .contact h2, .contact a {font-size: 2.5rem;}
 }
 @media only screen and (max-height: 859px) and (max-width: 680px) {
-    .header h1 {font-size: 2rem;}
+    .header h1 {
+        font-size: 2rem;
+        -webkit-animation-name: waterLevel3;
+    }
+    @-webkit-keyframes waterLevel3 { 
+        0% {background-position: 220px -35px}
+        70% {background-position: 50px -50px;}
+        100% {background-position: -10px -70px;}
+    }
     nav ul li {font-size: 1.5rem;}
     .content {
         margin-top: 11rem;
@@ -309,7 +367,15 @@ nav ul li:hover {
     .contact h2, .contact a {font-size: 1.75rem;}
 }
 @media only screen and (max-height: 859px) and (max-width: 476px) {
-    .header h1 {font-size: 1.5rem;}
+    .header h1 {
+        font-size: 1.5rem;
+        -webkit-animation-name: waterLevel4;
+    }
+    @-webkit-keyframes waterLevel4 { 
+        0% {background-position: 220px -45px;}
+        70% {background-position: 50px -50px;}
+        100% {background-position: -10px -70px;}
+    }
     nav ul li {font-size: 1rem;}
     .content {
         margin-top: 9rem;
@@ -324,7 +390,15 @@ nav ul li:hover {
 }
 /*mobile*/
 @media only screen and (max-height: 859px) and (max-width: 380px) {
-    .header h1 {font-size: 1.25rem;}
+    .header h1 {
+        font-size: 1.25rem;
+        -webkit-animation-name: waterLevel5;
+    }
+    @-webkit-keyframes waterLevel5 { 
+        0% {background-position: 220px -50px;}
+        70% {background-position: 50px -57.5px;}
+        100% {background-position: -10px -65px;}
+    }
     .contact h2, .contact a {font-size: 1.25rem;}
 }
 @media only screen and (max-height: 859px) and (max-width: 330px) {

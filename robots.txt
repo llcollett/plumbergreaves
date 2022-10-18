@@ -1,0 +1,7 @@
+# robots.txt, good morning and all the best.
+
+User-agent: *
+
+Disallow: /resources/
+
+# sitemap is not necessary as one page!
