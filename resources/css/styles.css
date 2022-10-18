@@ -171,16 +171,14 @@ nav ul li:hover {
     .content div {width: 28rem; height: auto;}
 }
 @media only screen and (max-width: 1140px) and (min-height: 860px) {
-    .header h1 {
-        font-size: 4rem;
-        -webkit-animation-name: waterLevel1;
-    }
+    .header h1 {font-size: 4rem;}
+    .header h1 span{-webkit-animation-name: waterLevel1;}
     @-webkit-keyframes waterLevel1 { 
         0% {background-position: 220px 20px;}
         70% {background-position: 50px -20px;}
         100% {background-position: -10px -30px;}
     }
-    nav ul li {font-size: 2.5rem;}
+    nav ul li {font-size: 2.5rem;}git st
     .content {
         margin-top: 15rem;
         margin-bottom: 10rem;
@@ -199,10 +197,8 @@ nav ul li:hover {
     .contact h2, .contact a {font-size: 2.75rem;}
 }
 @media only screen and (max-width: 912px) and (min-height: 860px) {
-    .header h1 {
-        font-size: 3rem;
-        -webkit-animation-name: waterLevel2;
-    }
+    .header h1 {font-size: 3rem;}
+    .header h1 span {-webkit-animation-name: waterLevel2;}
     @-webkit-keyframes waterLevel2 { 
         0% {background-position: 220px -20px}
         70% {background-position: 50px -30px;}
@@ -224,8 +220,8 @@ nav ul li:hover {
     .contact h2, .contact a {font-size: 2.5rem;}
 }
 @media only screen and (max-width: 680px) and (min-height: 860px) {
-    .header h1 {
-        font-size: 2rem;
+    .header h1 {font-size: 2rem;}
+    .header h1 span {
         -webkit-animation-name: waterLevel3;
         -webkit-animation-duration: 3s;
     }
@@ -246,8 +242,8 @@ nav ul li:hover {
     .contact h2, .contact a {font-size: 1.75rem;}
 }
 @media only screen and (max-width: 476px) and (min-height: 860px) {
-    .header h1 {
-        font-size: 1.5rem;
+    .header h1 {font-size: 1.5rem;}
+    .header h1 span {
         -webkit-animation-name: waterLevel4;
         -webkit-animation-duration: 3s;
     }
@@ -270,8 +266,8 @@ nav ul li:hover {
 }
 /*mobile*/
 @media only screen and (max-width: 380px) and (min-height: 860px) {
-    .header h1 {
-        font-size: 1.25rem;
+    .header h1 {font-size: 1.25rem;}
+    .header h1 span {
         -webkit-animation-name: waterLevel5;
         -webkit-animation-duration: 3s;
     }
@@ -292,10 +288,8 @@ nav ul li:hover {
 
 /*when screen is short*/
 @media only screen and (max-height: 859px) {
-    .header h1 {
-        font-size: 4rem;
-        -webkit-animation-name: waterLevel1;
-    }
+    .header h1 {font-size: 4rem;}
+    .header h1 span {-webkit-animation-name: waterLevel1;}
     @-webkit-keyframes waterLevel1 { 
         0% {background-position: 220px 20px;}
         70% {background-position: 50px -20px;}
@@ -324,10 +318,8 @@ nav ul li:hover {
     }
 }
 @media only screen and (max-height: 859px) and (max-width: 912px) {
-    .header h1 {
-        font-size: 3rem;
-        -webkit-animation-name: waterLevel2;
-    }
+    .header h1 {font-size: 3rem;}
+    .header h1 span {-webkit-animation-name: waterLevel2;}
     @-webkit-keyframes waterLevel2 { 
         0% {background-position: 220px -20px}
         70% {background-position: 50px -30px;}
@@ -340,8 +332,8 @@ nav ul li:hover {
     .contact h2, .contact a {font-size: 2.5rem;}
 }
 @media only screen and (max-height: 859px) and (max-width: 680px) {
-    .header h1 {
-        font-size: 2rem;
+    .header h1 {font-size: 2rem;}
+    .header h1 span {
         -webkit-animation-name: waterLevel3;
         -webkit-animation-duration: 3s;
     }
@@ -374,8 +366,8 @@ nav ul li:hover {
     .contact h2, .contact a {font-size: 1.75rem;}
 }
 @media only screen and (max-height: 859px) and (max-width: 476px) {
-    .header h1 {
-        font-size: 1.5rem;
+    .header h1 {font-size: 1.5rem;}
+    .header h1 span {
         -webkit-animation-name: waterLevel4;
         -webkit-animation-duration: 3s;
     }
@@ -398,8 +390,8 @@ nav ul li:hover {
 }
 /*mobile*/
 @media only screen and (max-height: 859px) and (max-width: 380px) {
-    .header h1 {
-        font-size: 1.25rem;
+    .header h1 {font-size: 1.25rem;}
+    .header h1 span {
         -webkit-animation-name: waterLevel5;
         -webkit-animation-duration: 3s;
     }
