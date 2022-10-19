@@ -62,7 +62,7 @@ a {
     100% {background-position: -10px -45px;}
 }
 /*remove both animations when hover over header*/
-header:hover .header-text h1 {
+header:hover .header-text h1 span {
     -webkit-animation-play-state: paused;
 }
 /*header nav*/
