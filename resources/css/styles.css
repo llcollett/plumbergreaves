@@ -231,7 +231,10 @@ nav ul li:hover {
         70% {background-position: 50px -50px;}
         100% {background-position: -10px -70px;}
     }
-    nav ul li {font-size: 1.5rem;}
+    nav ul li {
+        font-size: 1.5rem;
+        text-shadow: 0.0625rem 0.0625rem white;
+    }
     .content {
         margin-top: 11rem;
         margin-bottom: 9rem;
@@ -310,6 +313,7 @@ nav ul li:hover {
     .content div img {padding: 1rem;}
 }
 @media only screen and (max-height: 859px) and (max-width: 1140px) {
+    .content {margin-bottom: 9rem;}
     .contact {
         height: 8rem;
         display: inline-flex;
@@ -343,7 +347,10 @@ nav ul li:hover {
         70% {background-position: 50px -50px;}
         100% {background-position: -10px -70px;}
     }
-    nav ul li {font-size: 1.5rem;}
+    nav ul li {
+        font-size: 1.5rem; 
+        text-shadow: 0.0625rem 0.0625rem white;
+    }
     .content {
         margin-top: 11rem;
         margin-bottom: 9rem;
