@@ -38,7 +38,12 @@ a {
 /*header logo*/
 .header-logo img {
     width: 7.5rem;
-    padding: 0.25rem 1rem;
+    padding: 0.25rem 2rem;
+    animation: 2s ease 0s 1 logo-appear;
+}
+@keyframes logo-appear {
+    0% {opacity: 0%;}
+    100% {opacity: 100%}
 }
 /*header text*/
 .header .header-text {
@@ -57,7 +62,8 @@ a {
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
     -webkit-animation-name: waterLevel; 
-    -webkit-animation-duration: 5s;  
+    -webkit-animation-duration: 5s;
+    -webkit-animation-delay: 2s;
     -webkit-animation-iteration-count: infinite; 
     -webkit-animation-timing-function: linear;
 }
