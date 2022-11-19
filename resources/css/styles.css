@@ -27,13 +27,18 @@ a {
     justify-content: center;
     align-items: center;
 }
+/*header logo and text*/
+.header-top {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 /*header logo*/
-.header-logo {
+.header-logo img {
     margin-top: 1rem;
-    font-size: 1rem;
-    width: 10%;
+    height: 7.5rem;
     padding: 0.25rem 1rem;
-    background-color: grey;
 }
 /*header text*/
 .header .header-text {
@@ -69,7 +74,7 @@ header:hover .header-text h1 span {
 nav {
     margin: 1rem 0 0 0; padding: 0;
     width: 100%;
-    background-color: hsla(275, 57.3%, 67.8%, 60%);
+    background-color: hsla(275, 57%, 68%, 0.6);
     box-shadow: 0.125rem 0.125rem 1rem black;
 }
 nav ul {
@@ -140,7 +145,7 @@ nav ul li:hover {
     height: 5rem;
     bottom: 0; left: 0; right: 0;
     padding: 0.25rem 0;
-    background-color: hsla(95, 57.3%, 32.2%, 80%);
+    background-color: hsla(95, 57%, 32%, 0.8);
     box-shadow: -0.125rem -0.125rem 1rem black;
     display: inline-flex;
     justify-content: space-evenly;
@@ -221,6 +226,13 @@ nav ul li:hover {
     .contact h2, .contact a {font-size: 2.5rem;}
 }
 @media only screen and (max-width: 680px) and (min-height: 860px) {
+    .header-top {
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+    }
     .header h1 {font-size: 2rem;}
     .header h1 span {
         -webkit-animation-name: waterLevel3;
