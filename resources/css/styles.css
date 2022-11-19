@@ -29,6 +29,7 @@ a {
 }
 /*header logo and text*/
 .header-top {
+    margin-top: 1rem;
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
@@ -36,7 +37,6 @@ a {
 }
 /*header logo*/
 .header-logo img {
-    margin-top: 1rem;
     height: 7.5rem;
     padding: 0.25rem 1rem;
 }
