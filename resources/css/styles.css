@@ -8,9 +8,9 @@ html {
     margin: 0; padding: 0;
     scroll-behavior: smooth;
 }
-
-html, body {top: 0; right: 0; bottom: 0; left: 0;}
-
+html, body {
+    top: 0; right: 0; bottom: 0; left: 0;
+}
 a {
     color: black;
     text-decoration: none;
@@ -19,48 +19,58 @@ a {
 /*header*/
 .header {
     left: 0; right: 0; top: 0;
+    margin: 0; padding: 0;
+    height: 13rem;
+    width: 100%;
     z-index: 10;
     position: fixed;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 /*header logo and text*/
 .header-top {
-    margin-top: 1rem;
-    display: inline-flex;
+    left: 0; right: 0; top: 0;
+    margin: 0; padding: 0;
+    height: 8.5rem;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 /*header logo*/
-.header-logo img {
-    width: 7.5rem;
-    padding: 0.25rem 2rem;
-    animation: 2s ease 0s 1 logo-appear;
+.header-top .header-logo img {
+    width: 7rem;
+    padding: 0.5rem 2rem;
+    animation: 1.5s ease 0s 1 logo-appear;
 }
 @keyframes logo-appear {
     0% {opacity: 0%;}
     100% {opacity: 100%}
 }
-/*header text*/
-.header .header-text {
-    margin: 0;
+.header-logo img:hover {
+    cursor: pointer;
 }
+.header-logo img:active {
+    animation: 1s ease 0s 1 logo-resize;
+}
+@keyframes logo-resize {
+    50% {width: 5rem;}
+}
+/*header text*/
 .header h1 {
     margin: 0;
-    padding-top: 0.5rem;
     font-size: 5rem;
     text-align: center;
 }
+/*plumber greaves heading in header text*/
 .header h1 span {
+    /*nice pipework style text shadow*/
     text-shadow: 0.0125rem 0.0125rem 0.5rem hsla(240, 3%, 94%, 80%);
+    /*water level background image*/
     background-image:-webkit-radial-gradient(center 10px, 100px 100px, black 70%, hsl(202, 69%, 56%) 71%);
     background-size: 4rem 8rem;
+    /*water level animation*/
     -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -webkit-animation-name: waterLevel; 
     -webkit-animation-duration: 5s;
     -webkit-animation-delay: 2s;
@@ -72,16 +82,17 @@ a {
     70% {background-position: 50px -20px;}
     100% {background-position: -10px -45px;}
 }
-/*remove both animations when hover over header*/
+/*remove animations when hover over header*/
 header:hover .header-text h1 span {
     -webkit-animation-play-state: paused;
 }
 /*header nav*/
 nav {
-    margin: 1rem 0 0 0; padding: 0;
+    top: 8.5rem;
+    margin: 0; padding: 0;
+    height: 4.5rem;
     width: 100%;
     background-color: hsla(275, 57%, 68%, 0.6);
-    box-shadow: 0.125rem 0.125rem 1rem black;
 }
 nav ul {
     margin: 0; 
@@ -104,13 +115,16 @@ nav ul li:hover {
 /*main*/
 .content {
     left: 0; right: 0;
-    margin: 16rem auto 7rem;
+    top: 13rem;
+    padding-bottom: 5.5rem;
+    position: absolute;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
 }
 .content div {
+    scroll-margin-top: 13rem;
     width: 24rem;
     height: auto;
     padding: 1.25%;
@@ -118,50 +132,49 @@ nav ul li:hover {
     font-size: 1.5rem;
     font-weight: bold;
     color: black;
-    background-color: hsla(240, 3%, 94%, 80%);
-    border: 1px solid black;
-    border-radius: 1rem;
-    box-shadow: 0.125rem 0.125rem 1rem black;
+    background-color: hsla(0, 0%, 69%, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    transition: all 250ms ease-in-out;
+}
+.content div:hover {
+    transform: scale(1.1);
+    box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 .content div img {
     width: 14rem;
 }
-/*speech bubble detail - TO FIX*/
-/*.content div:before {
-	content: '';
-    position: relative;
-	width: 1rem;
-	height: 1rem;
-	left: -10rem;
-    top: auto;
-    transform: rotate(45deg);
-    background-color: hsla(240, 3%, 94%, 100%);
-	border-bottom: 1px solid black;
-	border-right: 1px solid black;
-}*/
 
 /*footer*/
 .contact {
-    position: fixed;
-    z-index: 20;
-    height: 5rem;
     bottom: 0; left: 0; right: 0;
     padding: 0.25rem 0;
+    height: 5rem;
+    z-index: 20;
+    position: fixed;
     background-color: hsla(95, 57%, 32%, 0.8);
-    box-shadow: -0.125rem -0.125rem 1rem black;
     display: inline-flex;
     justify-content: space-evenly;
     align-items: center;
 }
 .contact .contact-box {
-    padding-bottom: 0.5%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+.contact span {
+    padding-right: 1rem;
+}
+.contact a:hover span {
+    animation: 0.5s linear infinite contact-shake;
+}
+@keyframes contact-shake {
+    25% {transform: rotate(45deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-45deg);}
+    50% {transform: rotate(0deg);}
 }
 .contact h2, .contact a {
     margin: 0; 
@@ -176,28 +189,18 @@ nav ul li:hover {
 }
 
 /*adjust for smaller screen sizes based on width*/
-@media only screen and (max-width: 1620px) and (min-height: 860px) {
-    .content {margin-bottom: 8rem;}
-}
 @media only screen and (max-width: 1476px) and (min-height: 860px) {
     .content div {width: 28rem; height: auto;}
 }
-@media only screen and (max-width: 1140px) and (min-height: 860px) {
+@media only screen and (max-width: 1300px) and (min-height: 860px) {
+    .header {height: 12.5rem;}
     .header h1 {font-size: 4rem;}
-    .header h1 span{-webkit-animation-name: waterLevel1;}
-    @-webkit-keyframes waterLevel1 { 
-        0% {background-position: 220px 20px;}
-        70% {background-position: 50px -20px;}
-        100% {background-position: -10px -30px;}
-    }
+    .header h1 span{-webkit-animation: none;}
+    nav {height: 4rem;}
     nav ul li {font-size: 2.5rem;}
     .content {
-        margin-top: 15rem;
-        margin-bottom: 10rem;
-    }
-    .content div {
-        width: 23rem; 
-        height: auto;
+        top: 12.5rem;
+        padding-bottom: 9rem;
     }
     .contact {
         height: 8rem;
@@ -208,101 +211,94 @@ nav ul li:hover {
     }
     .contact h2, .contact a {font-size: 2.75rem;}
 }
-@media only screen and (max-width: 912px) and (min-height: 860px) {
+@media only screen and (max-width: 1090px) and (min-height: 860px) {
+    .header {height: 12rem;}
     .header h1 {font-size: 3rem;}
-    .header h1 span {-webkit-animation-name: waterLevel2;}
-    @-webkit-keyframes waterLevel2 { 
-        0% {background-position: 220px -20px}
-        70% {background-position: 50px -30px;}
-        100% {background-position: -10px -40px;}
-    }
+    nav {height: 3.5rem;}
     nav ul li {font-size: 2rem;}
-    .content {margin-top: 13rem;}
+    .content {top: 12rem;}
     .content div {
-        width: 20rem; 
+        width: 20rem;
         height: auto;
     }
+    .content div:hover {transform: scale(1.05);}
 }
-@media only screen and (max-width: 780px) and (min-height: 860px) {
+@media only screen and (max-width: 850px) and (min-height: 860px) {
+    .header {height: 9.5rem;}
+    .header-top {height: 7rem;}
+    .header h1 {font-size: 2.5rem;}
+    .header-top .header-logo img {width: 5rem;}
+    nav {height: 2.5rem;}
+    nav ul li {
+        font-size: 1.5rem;
+        text-shadow: 0.0625rem 0.0625rem white;
+    }
+    .content {top: 9.5rem;}
     .content div {
+        margin: 1.5rem;
         width: 32rem; 
         height: auto;
         font-size: 1.25rem;
     }
     .contact h2, .contact a {font-size: 2.5rem;}
 }
-@media only screen and (max-width: 680px) and (min-height: 860px) {
+@media only screen and (max-width: 720px) and (min-height: 860px) {
+    .header {height: 13rem;}
     .header-top {
+        height: 10.5rem;
         display: flex;
         flex-direction: column;
-        flex-flow: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: space-between;
     }
-    .header h1 {font-size: 2rem;}
-    .header h1 span {
-        -webkit-animation-name: waterLevel3;
-        -webkit-animation-duration: 4s;
-    }
-    @-webkit-keyframes waterLevel3 { 
-        0% {background-position: 220px -35px}
-        70% {background-position: 50px -50px;}
-        100% {background-position: -10px -70px;}
-    }
-    nav ul li {
-        font-size: 1.5rem;
-        text-shadow: 0.0625rem 0.0625rem white;
-    }
+    .header-top .header-logo img {padding: 0;}
     .content {
-        margin-top: 11rem;
-        margin-bottom: 9rem;
+        top: 13rem;
+        padding-bottom: 7.5rem;
     }
     .contact {height: 7rem;}
     .contact h2, .contact a {font-size: 2rem;}
 }
-@media only screen and (max-width: 520px) and (min-height: 860px) {
-    .contact h2, .contact a {font-size: 1.75rem;}
-}
-@media only screen and (max-width: 476px) and (min-height: 860px) {
-    .header h1 {font-size: 1.5rem;}
-    .header h1 span {
-        -webkit-animation-name: waterLevel4;
-        -webkit-animation-duration: 4s;
-    }
-    @-webkit-keyframes waterLevel4 { 
-        0% {background-position: 220px -45px;}
-        70% {background-position: 50px -50px;}
-        100% {background-position: -10px -70px;}
-    }
+@media only screen and (max-width: 570px) and (min-height: 860px) {
+    .header {height: 12rem;}
+    .header-top {height: 10rem;}
+    .header h1 {font-size: 2rem;}
+    nav {height: 2rem;}
     nav ul li {font-size: 1rem;}
     .content {
-        margin-top: 9rem;
-        margin-bottom: 8rem;
+        top: 12rem;
+        padding-bottom: 7rem;
     }
     .content div {
         width: auto; height: auto;
         font-size: 1rem;
     }
     .contact {height: 6rem;}
+    .contact span {padding-right: 0.5rem;}
     .contact h2, .contact a {font-size: 1.5rem;}
+}
+@media only screen and (max-width: 460px) and (min-height: 860px) {
+    .header h1 {font-size: 1.6rem;}
 }
 /*mobile*/
 @media only screen and (max-width: 380px) and (min-height: 860px) {
+    .header {height: 11rem;}
+    .header-top {height: 9rem;}
     .header h1 {font-size: 1.25rem;}
-    .header h1 span {
-        -webkit-animation-name: waterLevel5;
-        -webkit-animation-duration: 4s;
+    .content {
+        top: 11rem;
+        padding-bottom: 6rem;
     }
-    @-webkit-keyframes waterLevel5 { 
-        0% {background-position: 120px -55px;}
-        70% {background-position: 50px -60px;}
-        100% {background-position: -10px -65px;}
-    }
+    .contact {height: 5rem;}
     .contact h2, .contact a {font-size: 1.25rem;}
 }
-@media only screen and (max-width: 330px) and (min-height: 860px) {
+@media only screen and (max-width: 340px) and (min-height: 860px) {
+    .header {height: 10.5rem;}
+    nav {height: 1.5rem;}
+    nav ul li {font-size: 0.75rem;}
     .content {
-        margin-bottom: 6rem;
+        top: 10.5rem;
+        margin-bottom: 4.5rem;
     }
     .contact {height: 4rem;}
     .contact h2, .contact a {font-size: 1rem;}
@@ -310,15 +306,12 @@ nav ul li:hover {
 
 /*when screen is short*/
 @media only screen and (max-height: 859px) {
+    .header {height: 12rem;}
     .header h1 {font-size: 4rem;}
-    .header h1 span {-webkit-animation-name: waterLevel1;}
-    @-webkit-keyframes waterLevel1 { 
-        0% {background-position: 220px -10px;}
-        70% {background-position: 50px -35px;}
-        100% {background-position: -10px -50px;}
-    }
+    .header h1 span{-webkit-animation: none;}
+    nav {height: 3.5rem;}
     nav ul li {font-size: 2rem;}
-    .content {margin-top: 13rem;}
+    .content {top: 12rem;}
     .content div {
         width: 32rem; 
         height: auto;
@@ -331,7 +324,8 @@ nav ul li:hover {
     .content div img {padding: 1rem;}
 }
 @media only screen and (max-height: 859px) and (max-width: 1140px) {
-    .content {margin-bottom: 9rem;}
+    .header h1 {font-size: 3rem;}
+    .content {padding-bottom: 9rem;}
     .contact {
         height: 8rem;
         display: inline-flex;
@@ -340,43 +334,48 @@ nav ul li:hover {
         align-items: center;
     }
 }
-@media only screen and (max-height: 859px) and (max-width: 912px) {
-    .header h1 {font-size: 3rem;}
-    .header h1 span {-webkit-animation-name: waterLevel2;}
-    @-webkit-keyframes waterLevel2 { 
-        0% {background-position: 220px -30px}
-        70% {background-position: 50px -50px;}
-        100% {background-position: -10px -60px;}
-    }
-    nav ul li {font-size: 2rem;}
-    .content {margin-top: 13rem;}
-}
-@media only screen and (max-height: 859px) and (max-width: 780px) {
-    .contact h2, .contact a {font-size: 2.5rem;}
-}
-@media only screen and (max-height: 859px) and (max-width: 680px) {
+@media only screen and (max-height: 859px) and (max-width: 850px) {
+    .header {height: 10rem;}
+    .header-top {height: 7.5rem;}
     .header h1 {font-size: 2rem;}
-    .header h1 span {
-        -webkit-animation-name: waterLevel3;
-        -webkit-animation-duration: 4s;
-    }
-    @-webkit-keyframes waterLevel3 { 
-        0% {background-position: 220px -37px}
-        70% {background-position: 50px -53px;}
-        100% {background-position: -10px -67px;}
-    }
+    .header-top .header-logo img {width: 5rem;}
+    nav {height: 2.5rem;}
     nav ul li {
         font-size: 1.5rem; 
         text-shadow: 0.0625rem 0.0625rem white;
     }
+    .content {top: 10rem;}
+    .content div {margin: 1.5rem;}
+    .content div:hover {transform: scale(1.05);}
+    .contact h2, .contact a {font-size: 2.5rem;}
+}
+@media only screen and (max-height: 859px) and (max-width: 720px) {
+    .header {height: 13rem;}
+    .header-top {
+        height: 10.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+    }
+    .header-top .header-logo img {padding: 0;}
     .content {
-        margin-top: 11rem;
-        margin-bottom: 9rem;
+        top: 13rem;
+        padding-bottom: 7.5rem;
     }
     .contact {height: 7rem;}
     .contact h2, .contact a {font-size: 2rem;}
 }
-@media only screen and (max-height: 859px) and (max-width: 600px) {
+@media only screen and (max-height: 859px) and (max-width: 570px) {
+    .header {height: 12rem;}
+    .header-top {height: 10rem;}
+    .header h1 {font-size: 2rem;}
+    nav {height: 2rem;}
+    nav ul li {font-size: 1rem;}
+    .content {
+        top: 12rem;
+        padding-bottom: 6.5rem;
+    }
     .content div {
         width: 32rem; 
         height: auto;
@@ -387,50 +386,39 @@ nav ul li:hover {
         align-items: center;
     }
     .content div img {padding: 0rem;}
-}
-@media only screen and (max-height: 859px) and (max-width: 520px) {
-    .contact h2, .contact a {font-size: 1.75rem;}
+    .contact {height: 6rem;}
+    .contact span {padding-right: 0.5rem;}
+    .contact h2, .contact a {font-size: 1.5rem;}
 }
 @media only screen and (max-height: 859px) and (max-width: 476px) {
+    .header {height: 11.5rem;}
+    .header-top {height: 9.5rem;}
     .header h1 {font-size: 1.5rem;}
-    .header h1 span {
-        -webkit-animation-name: waterLevel4;
-        -webkit-animation-duration: 4s;
-    }
-    @-webkit-keyframes waterLevel4 { 
-        0% {background-position: 180px -50px;}
-        70% {background-position: 40px -60px;}
-        100% {background-position: 20px -70px;}
-    }
-    nav ul li {font-size: 1rem;}
-    .content {
-        margin-top: 9rem;
-        margin-bottom: 8rem;
-    }
     .content div {
         width: auto; height: auto;
         font-size: 1rem;
     }
-    .contact {height: 6rem;}
-    .contact h2, .contact a {font-size: 1.5rem;}
 }
 /*mobile*/
 @media only screen and (max-height: 859px) and (max-width: 380px) {
+    .header {height: 11rem;}
+    .header-top {height: 9rem;}
     .header h1 {font-size: 1.25rem;}
-    .header h1 span {
-        -webkit-animation-name: waterLevel5;
-        -webkit-animation-duration: 4s;
-    }
-    @-webkit-keyframes waterLevel5 { 
-        0% {background-position: 180px -55px;}
-        70% {background-position: 40px -65px;}
-        100% {background-position: 20px -75px;}
-    }
-    .contact h2, .contact a {font-size: 1.25rem;}
-}
-@media only screen and (max-height: 859px) and (max-width: 330px) {
     .content {
-        margin-bottom: 6rem;
+        top: 11rem;
+        padding-bottom: 6rem;
+    }
+    .contact {height: 5rem;}
+    .contact h2, .contact a {font-size: 1.25rem;}
+
+}
+@media only screen and (max-height: 859px) and (max-width: 340px) {
+    .header {height: 10.5rem;}
+    nav {height: 1.5rem;}
+    nav ul li {font-size: 0.75rem;}
+    .content {
+        top: 10.5rem;
+        margin-bottom: 4.5rem;
     }
     .contact {height: 4rem;}
     .contact h2, .contact a {font-size: 1rem;}
