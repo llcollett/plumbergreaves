@@ -39,6 +39,7 @@ a {
 /*header logo*/
 .header-top .header-logo img {
     width: 7rem;
+    opacity: 1;
     padding: 0.5rem 2rem;
     animation: 1.5s ease 0s 1 logo-appear;
 }
