@@ -171,6 +171,8 @@ nav ul li:hover {
     align-items: center;
 }
 .contact span {
+    position: relative;
+    top: -0.1875rem;
     padding-right: 0.5rem;
 }
 .contact a:hover span {
