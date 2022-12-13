@@ -207,6 +207,7 @@ nav ul li:hover {
     nav ul li {font-size: 1rem;}
     .content {top: 8rem;}
     .content div {
+        scroll-margin-top: 8rem;
         width: auto;
     }
     .content div img {
@@ -228,17 +229,14 @@ nav ul li:hover {
         justify-content: center;
         align-items: center;
     }
-    .header-top .header-logo img {
-        padding: 1rem;
-    }
-    .header h1 span {
-        background-size: 0.5rem 1.5rem;
-    }
+    .header-top .header-logo img {padding: 1rem;}
+    .header h1 span {background-size: 0.5rem 1.5rem;}
     .content {
         top: 7rem;
         padding-bottom: 4rem;
     }
     .content div {
+        scroll-margin-top: 7rem;
         width: auto;
         display: flex;
         flex-direction: row;
@@ -249,12 +247,8 @@ nav ul li:hover {
         transform: scale(1.0125);
         box-shadow: 0.25rem 0.25rem 0.5rem black;
     }
-    .content div img:active {
-        transform: none;
-    }
-    .content div img:hover {
-        transform: scale(2.5);
-    }
+    .content div img:active {transform: none;}
+    .content div img:hover {transform: scale(2.5);}
     .content div #who-image,
     .content div #how-images {
         display: inline-flex;
@@ -303,19 +297,13 @@ nav ul li:hover {
     header:hover .header-text h1 span {
         -webkit-animation-play-state: paused;
     }
-    nav ul {
-        height: 3rem;
-    }
-    nav ul li {
-        font-size: 2rem;
-    }
+    nav ul {height: 3rem;}
+    nav ul li {font-size: 2rem;}
     .content {
         top: 11rem;
         padding-top: 1rem;
     }
-    .content div { 
-        scroll-margin-top: 11rem;
-    }
+    .content div {scroll-margin-top: 11rem;}
     .contact {
         display: inline-flex;
         flex-flow: row nowrap;
