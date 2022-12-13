@@ -1,7 +1,7 @@
 
 /*universal styles*/
 html {
-    font-family: "Lexend", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 16px;
     opacity: 80%;
     text-align: center;
@@ -112,7 +112,6 @@ nav ul li:hover {
     padding: 1rem;
     margin: 1rem;
     font-size: 1rem;
-    font-family: "Dosis", sans-serif;
     font-weight: bold;
     color: black;
     background-color: hsla(0, 0%, 69%, 0.6);
