@@ -198,7 +198,7 @@ nav ul li:hover {
 /*smaller than default width*/
 @media only screen and (max-width: 416px) {
     .header h1 {font-size: 1rem;}
-    nav ul li {font-size: 0.875rem;}
+    nav ul li {font-size: 1rem;}
     .content div {
         width: auto;
     }
@@ -208,7 +208,7 @@ nav ul li:hover {
         max-width: 12rem;
         max-height: 16rem;
     }
-    .contact h2, .contact a {font-size: 0.875rem;}
+    .contact h2, .contact a {font-size: 1rem;}
 }
 
 /*smaller than default height but only if not smaller than smallest specified width*/
