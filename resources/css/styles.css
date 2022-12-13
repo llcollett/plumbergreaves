@@ -142,7 +142,7 @@ nav ul li:hover {
     transition: all 250ms ease-in-out 0s;
 }
 .content div img:active {
-    transform: scale(2.5);
+    transform: scale(2);
 }
 .content div #who-image,
 .content div #how-images {
