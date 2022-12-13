@@ -66,8 +66,8 @@ a {
     /*water level background image*/
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
-    background-image:-webkit-radial-gradient(center 10px, 100px 100px, black 70%, hsl(202, 69%, 56%) 71%);
-    background-size: 4rem 8rem;
+    background-image:-webkit-radial-gradient(center 10px, 10px 10px, black 70%, hsl(202, 69%, 56%) 71%);
+    background-size: 0.75rem 2rem;
 }
 /*header nav*/
 nav {
@@ -208,6 +208,51 @@ nav ul li:hover {
     .contact h2, .contact a {font-size: 0.75rem;}
 }
 
+/*smaller than default height but only if not smaller than smallest specified width*/
+@media only screen and (max-height: 696px) and (min-width: 416px) {
+    .header {height: 7rem}
+    .header-top {
+        height: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-top .header-logo img {
+        padding: 1rem;
+    }
+    .header h1 span {
+        background-size: 0.5rem 1.5rem;
+    }
+    .content {
+        top: 7rem;
+        padding-bottom: 4rem;
+    }
+    .content div {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .content div:hover {
+        transform: scale(1.0125);
+        box-shadow: 0.25rem 0.25rem 0.5rem black;
+    }
+    .content div #who-image,
+    .content div #how-images {
+        display: inline-flex;
+        flex-flow: row nowrap;
+    }
+    .contact {
+        height: 2.5rem;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
 /*large enough to do word animation*/
 @media only screen and (min-width: 1272px) {
     .header {height: 11rem}
@@ -258,5 +303,8 @@ nav ul li:hover {
         justify-content: space-around;
         align-items: center;
     }
-    .contact h2, .contact a {font-size: 2rem;}
+    .contact h2, .contact a {
+        font-size: 2rem;
+        text-shadow: 0.125rem 0.125rem white;
+    }
 }
