@@ -249,6 +249,12 @@ nav ul li:hover {
         transform: scale(1.0125);
         box-shadow: 0.25rem 0.25rem 0.5rem black;
     }
+    .content div img:active {
+        transform: none;
+    }
+    .content div img:hover {
+        transform: scale(2.5);
+    }
     .content div #who-image,
     .content div #how-images {
         display: inline-flex;
