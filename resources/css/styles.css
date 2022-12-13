@@ -300,7 +300,8 @@ nav ul li:hover {
     nav ul li {font-size: 2rem;}
     .content {
         top: 11rem;
-        padding-top: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 3.5rem;
     }
     .content div {scroll-margin-top: 11rem;}
     .contact {
