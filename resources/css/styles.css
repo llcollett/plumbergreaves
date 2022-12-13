@@ -97,7 +97,7 @@ nav ul li:hover {
 /*main*/
 .content {
     left: 0; right: 0;
-    top: 10rem;
+    top: 9rem;
     padding: 0.5rem 0.5rem 5rem;
     position: absolute;
     display: flex;
@@ -106,7 +106,7 @@ nav ul li:hover {
     flex-flow: row wrap;
 }
 .content div {
-    scroll-margin-top: 13rem;
+    scroll-margin-top: 9rem;
     width: 24rem;
     height: auto;
     padding: 1rem;
@@ -197,8 +197,15 @@ nav ul li:hover {
 
 /*smaller than default width*/
 @media only screen and (max-width: 416px) {
+    .header {height: 8rem;}
+    .header-top {height: 6rem;}
     .header h1 {font-size: 1rem;}
+    .header h1 span {
+        background-image:-webkit-radial-gradient(center 5px, 10px 10px, black 70%, hsl(202, 69%, 56%) 71%);
+        background-size: 0.6rem 2rem;
+    }
     nav ul li {font-size: 1rem;}
+    .content {top: 8rem;}
     .content div {
         width: auto;
     }
@@ -299,6 +306,9 @@ nav ul li:hover {
     .content {
         top: 11rem;
         padding-top: 1rem;
+    }
+    .content div { 
+        scroll-margin-top: 11rem;
     }
     .contact {
         display: inline-flex;
