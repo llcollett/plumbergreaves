@@ -74,7 +74,7 @@ nav {
     top: 8rem;
     margin: 0; padding: 0;
     width: 100%;
-    background-color: hsla(275, 57%, 68%, 0.6);
+    background-color: rgb(189, 144, 221);
 }
 nav ul {
     margin: 0; padding: 0;
@@ -159,7 +159,7 @@ nav ul li:hover {
     height: 3.5rem;
     z-index: 20;
     position: fixed;
-    background-color: hsla(95, 57%, 32%, 0.8);
+    background-color: rgb(84, 126, 54);
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -185,15 +185,13 @@ nav ul li:hover {
     50% {transform: rotate(0deg);}
 }
 .contact h2, .contact a {
-    margin: 0; 
-    padding: 0;
+    margin: 0; padding: 0;
     font-size: 1.25rem;
     color: black;
+    text-shadow: 0.0625rem 0.0625rem white;
     display: inline-flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    color: black;
-    text-shadow: 0.0625rem 0.0625rem white;
 }
 
 /*smaller than default width*/
