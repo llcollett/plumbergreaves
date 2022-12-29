@@ -212,13 +212,13 @@ nav ul li:hover, nav ul li a:hover {
     .contact h2, .contact a {font-size: 1.2rem;}
 }
 /*nested max widths for smaller screens and smaller font sizes specifically*/
-@media only screen and (min-width: 349px) and (max-width: 380px) {
+@media only screen and (max-width: 380px) {
     .header h1 {font-size: 1.6rem;}
     nav ul li, nav ul li a {font-size: 1.1rem;}
     .content div {font-size: 0.8rem;}
     .contact h2, .contact a {font-size: 1.1rem;}
 }
-@media only screen and (min-width: 301px) and (max-width: 348px) {
+@media only screen and (max-width: 348px) {
     .header h1 {font-size: 1.3rem;}
     nav ul li, nav ul li a {font-size: 1rem;}
     .content div {font-size: 0.7rem;}
