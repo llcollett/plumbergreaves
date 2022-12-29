@@ -195,8 +195,8 @@ nav ul li:hover, nav ul li a:hover {
 @media only screen and (max-width: 416px) {
     .header {height: 8rem;}
     .header-top {height: 6rem;}
-    .header h1 {font-size: 6vw;}
-    nav ul li, nav ul li a {font-size: 5vw;}
+    .header h1 {font-size: 1.75rem;}
+    nav ul li, nav ul li a {font-size: 1.2rem;}
     .content {top: 8rem;}
     .content div {
         scroll-margin-top: 8rem;
@@ -209,7 +209,26 @@ nav ul li:hover, nav ul li a:hover {
         max-width: 12rem;
         max-height: 16rem;
     }
-    .contact h2, .contact a {font-size: 5vw;}
+    .contact h2, .contact a {font-size: 1.2rem;}
+}
+/*nested max widths for smaller screens and smaller font sizes specifically*/
+@media only screen and (min-width: 349px) and (max-width: 380px) {
+    .header h1 {font-size: 1.6rem;}
+    nav ul li, nav ul li a {font-size: 1.1rem;}
+    .content div {font-size: 0.8rem;}
+    .contact h2, .contact a {font-size: 1.1rem;}
+}
+@media only screen and (min-width: 301px) and (max-width: 348px) {
+    .header h1 {font-size: 1.3rem;}
+    nav ul li, nav ul li a {font-size: 1rem;}
+    .content div {font-size: 0.7rem;}
+    .contact h2, .contact a {font-size: 1rem;}
+}
+@media only screen and (max-width: 300px) {
+    .header h1 {font-size: 1rem;}
+    nav ul li, nav ul li a {font-size: 0.8rem;}
+    .content div {font-size: 0.7rem;}
+    .contact h2, .contact a {font-size: 0.8rem;}
 }
 
 /*smaller than default height but only if not smaller than smallest specified width*/
