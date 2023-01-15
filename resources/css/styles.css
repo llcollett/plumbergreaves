@@ -102,13 +102,13 @@ nav ul li:hover, nav ul li a:hover {
     align-items: center;
     flex-flow: row wrap;
 }
-.content div {
+.content .w-box {
     scroll-margin-top: 9rem;
     width: 24rem;
     height: auto;
     padding: 1rem;
     margin: 1rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
     color: black;
     background-color: hsla(0, 0%, 69%, 0.6);
@@ -118,31 +118,42 @@ nav ul li:hover, nav ul li a:hover {
     align-items: center;
     transition: all 250ms ease-in-out;
 }
-.content div:nth-of-type(3) {
+.content .w-box:nth-of-type(3) {
     flex-grow: 3;
 }
-.content div:nth-of-type(6) {
+.content .w-box:nth-of-type(6) {
     flex-grow: 2;
 }
-.content div:hover {
+.content .w-box:hover {
     transform: scale(1.025);
     box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
-.content div h2, 
-.content div p {
+.content .w-box h2, 
+.content .w-box p {
     padding: 0.25rem; margin: 0;
 }
-.content div img {
+.content .w-box img {
     padding: 0.5rem;
     margin: 0.5rem;
     height: 16rem;
 }
-.content div #who-image,
-.content div #how-images {
+.content .w-box #who-image,
+.content .w-box #how-images {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+}
+
+/*trustpilot*/
+.trustpilot-widget {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    vertical-align: center;
 }
 
 /*footer*/
@@ -192,18 +203,18 @@ nav ul li:hover, nav ul li a:hover {
 }
 
 /*smaller than default width*/
-@media only screen and (min-width: 359px) and (max-width: 416px) {
+@media only screen and (max-width: 416px) {
     .header {height: 8rem;}
     .header-top {height: 6rem;}
     .header h1 {font-size: 1.5rem;}
     nav ul li, nav ul li a {font-size: 1.2rem;}
     .content {top: 8rem;}
-    .content div {
+    .content .w-box {
         scroll-margin-top: 8rem;
         width: auto;
         font-size: 0.85rem;
     }
-    .content div img {
+    .content .w-box img {
         width: auto;
         height: auto;
         max-width: 12rem;
@@ -212,16 +223,16 @@ nav ul li:hover, nav ul li a:hover {
     .contact h2, .contact a {font-size: 1.2rem;}
 }
 /*nested max widths for smaller screens and smaller font sizes specifically*/
-@media only screen and (min-width: 301px) and (max-width: 358px) {
+@media only screen and (max-width: 358px) {
     .header h1 {font-size: 1.25rem;}
     nav ul li, nav ul li a {font-size: 1rem;}
-    .content div {font-size: 0.7rem;}
+    .content .w-box {font-size: 0.7rem;}
     .contact h2, .contact a {font-size: 1rem;}
 }
 @media only screen and (max-width: 300px) {
     .header h1 {font-size: 1rem;}
     nav ul li, nav ul li a {font-size: 0.8rem;}
-    .content div {font-size: 0.7rem;}
+    .content .w-box {font-size: 0.7rem;}
     .contact h2, .contact a {font-size: 0.8rem;}
 }
 
@@ -241,7 +252,7 @@ nav ul li:hover, nav ul li a:hover {
         top: 7rem;
         padding-bottom: 4rem;
     }
-    .content div {
+    .content .w-box {
         scroll-margin-top: 7rem;
         width: auto;
         display: flex;
@@ -249,13 +260,13 @@ nav ul li:hover, nav ul li a:hover {
         justify-content: space-around;
         align-items: center;
     }
-    .content div:hover {
+    .content .w-box:hover {
         transform: scale(1.0125);
         box-shadow: 0.25rem 0.25rem 0.5rem black;
     }
-    .content div img {height: 10rem;}
-    .content div #who-image,
-    .content div #how-images {
+    .content .w-box img {height: 10rem;}
+    .content .w-box #who-image,
+    .content .w-box #how-images {
         display: inline-flex;
         flex-flow: row nowrap;
     }
@@ -290,7 +301,10 @@ nav ul li:hover, nav ul li a:hover {
         padding-top: 0.5rem;
         padding-bottom: 3.5rem;
     }
-    .content div {scroll-margin-top: 11rem;}
+    .content .w-box {
+        scroll-margin-top: 11rem;
+        font-size: 1.1rem;
+    }
     .contact {
         display: inline-flex;
         flex-flow: row nowrap;
